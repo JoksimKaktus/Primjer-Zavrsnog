@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="proba.css">
+    </head>
+    <body>
+        <h1>Car inventory</h1>
+        <div>
+            <label for="model-add">Model: </label>
+            <input id="model-add" type="text">
+            <label for="year-add">Year: </label>
+            <input id="year-add" type="text">
+            <label for="reg-num-add">Registration number: </label>
+            <input id="reg-num-add" type="text">
+            <button id="add">Add car</button>
+        </div>
+        <div>
+            <label for="model-fil">Model: </label>
+            <input id="model-fil" type="text">
+            <label for="reg-num-fil">Registration number: </label>
+            <input id="reg-num-fil" type="text">
+            <button id="fil">Filter</button>
+        </div>
+        <table id="tabela" style="width: 56%;">
+            <tr>
+                <th onclick="sort('model')" style="width: 40%;">Model</th>
+                <th onclick="sort('year')" style="width: 20%;">Year</th>
+                <th onclick="sort('reg-num')" style="width: 40%;">Registration number</th>
+            </tr>
+        </table>
+        <script src="proba.js"></script>
+    </body>
+</html>
